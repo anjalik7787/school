@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 import { StudentAddComponent } from './students/student-add/student-add.component';
 import { StudentListComponent } from './students/student-list/student-list.component';
 import { TeachersAddComponent } from './teachers/teachers-add/teachers-add.component';
@@ -8,6 +9,8 @@ import { TeachersListComponent } from './teachers/teachers-list/teachers-list.co
 
 
 const routes: Routes = [
+
+
   {
     path: '',
     component: DashboardComponent,
@@ -27,6 +30,11 @@ const routes: Routes = [
       {
         path: "teachersAdd",
         component: TeachersAddComponent
+      }
+      ,
+      {
+        path: "newsletter",
+        component: NewsletterComponent
       }
 
     ]
